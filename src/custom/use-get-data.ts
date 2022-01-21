@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { AJAX_STATUS } from "./html-status";
-import { useAppDispatch, useAppSelector } from "../store-by-redux/hooks";
+import { useAppDispatch, useAppSelector } from "../_state/hooks";
 
 // apiKey: What state should this hook look into redux to get required data
 // actionToDispatch: What action to dispatch in case there is no data in shelf/reducer

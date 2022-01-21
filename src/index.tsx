@@ -1,21 +1,13 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { store } from './store-by-redux/store';
-import { Provider } from 'react-redux';
-import * as serviceWorker from './serviceWorker';
+
+import '_static/css/style.css';
+import EntryPoint from './entry-point';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <StrictMode>
+      <EntryPoint />
+    </StrictMode>,
+  document.querySelector('#root'),
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
